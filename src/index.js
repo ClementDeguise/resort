@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 // we can wrap the routing here to save space in the App file
 // notice the use of an alias on BrowserRouter
 import { BrowserRouter as Router } from 'react-router-dom';
-
+import {RoomProvider} from './context'
 
 
 
@@ -13,9 +13,13 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-	<Router>
-		<App />
-	</Router> 
+
+	<RoomProvider>
+		<Router>
+			<App />
+		</Router> 
+	</RoomProvider>
+	
 	,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
