@@ -27,9 +27,13 @@ render() {
 
 	// retrieve the featuredRooms as "rooms" from the context
 	// use a let for variable, and not a const
-	let { loading, featuredRooms : rooms } = this.context;
 
-	console.log(rooms);
+	// strangely this assignment below will return an empty array
+	//let { loading, featuredRooms : rooms } = this.context;
+	let rooms = value.featuredRooms;
+	let loading = value.loading;
+
+	//console.log(rooms);
 
 	// rendering each room separately using the generic component outside the JSX
 	rooms = rooms.map(room => {

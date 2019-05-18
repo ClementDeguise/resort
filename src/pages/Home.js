@@ -5,6 +5,8 @@ import {Link} from 'react-router-dom'
 import Services from '../components/Services'
 import FeaturedRooms from '../components/FeaturedRooms'
 
+
+
 // hero has the default prop
 // you can wrap everything using simply <> </>
 
